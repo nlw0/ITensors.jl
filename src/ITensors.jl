@@ -1,3 +1,4 @@
+
 module ITensors
 
 using Random,
@@ -39,7 +40,7 @@ import Base.adjoint,
        Base.*,
        Base./,
        Base.^,
-       Base.setdiff,  # Since setdiff doesn't 
+       Base.setdiff,  # Since setdiff doesn't
                       # work with IndexSet, overload it
        Base.lastindex,
        LinearAlgebra.axpby!,
@@ -80,6 +81,7 @@ include("itensor.jl")
 include("broadcast.jl")
 include("decomp.jl")
 include("iterativesolvers.jl")
+include("cp_als.jl")
 
 #####################################
 # QNs
